@@ -23,14 +23,14 @@ Send it any URL and it runs a full WordPress site audit — performance score, S
 
 Then it writes a personalized pitch draft based on the *specific* issues it found.
 
-**Real example I ran during testing on a live site (`its-not-your.store`):**
+**Real example I ran during testing on a live site (`https://prospect-site.com`):**
 
 The audit found:
 - Author slugs leaking via the Yoast sitemap (`jgqgex`, `tempdev-2`)
 - Staging/lorem ipsum content publicly indexable on Google
 - `wp-admin/install.php` reachable
 - Broad plugin REST namespace exposure (Beehive, Forminator, Hustle, Hummingbird all visible)
-- Old domain references (`deadlinestudio.net`) still appearing in RSS feeds and schema
+- Old domain references (`https://oldprospect-site.com`) still appearing in RSS feeds and schema
 - No CSP header
 - Missing meta description and image alt tags
 
@@ -64,7 +64,7 @@ Manual commands:
 
 Describe a project in plain language and get a full scoped proposal back: overview, phases, three pricing tiers, timeline, payment terms, what's included/excluded, and next steps.
 
-If you've already audited the site, `proposal for its-not-your.store` pulls the audit findings and builds the problem statement around the actual issues found — the proposal is specific to that client, not generic.
+If you've already audited the site, `proposal for https://prospect-site.com` pulls the audit findings and builds the problem statement around the actual issues found — the proposal is specific to that client, not generic.
 
 Refinement commands work conversationally: `make it more casual`, `change the price to $3,500`, `add a payment plan`, `remove Option C`.
 
@@ -78,7 +78,7 @@ A few things about OpenClaw's architecture made this genuinely powerful rather t
 
 **Heartbeat** is the killer feature for site monitoring. The agent wakes up, checks all sites, compares to last known state, and only messages you if something changed. That's not possible with a one-shot chatbot — it requires persistent state and scheduled execution. OpenClaw does this natively.
 
-**Workspace memory** lets the audit results flow into the proposal writer automatically. When I type `proposal for its-not-your.store`, it knows what was found in the audit because it wrote to memory during the audit run. The skills talk to each other through memory without me having to repeat myself.
+**Workspace memory** lets the audit results flow into the proposal writer automatically. When I type `proposal for https://prospect-site.com`, it knows what was found in the audit because it wrote to memory during the audit run. The skills talk to each other through memory without me having to repeat myself.
 
 **WhatsApp/Telegram integration** means this is actually usable on the go. I'm not opening a browser or logging into a dashboard. I send a message from my phone like I would to an assistant, and I get a structured answer back. That's the UX that makes this feel like an employee, not a tool.
 
