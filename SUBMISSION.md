@@ -130,4 +130,4 @@ Happy to answer questions or go deeper on any part of the build.
 
 ---
 
-*Built by [Your Name] | WordPress agency owner | WordClaw Phase 1 skills available on request*
+*Built by Leroy Bruster | WordPress agency owner | WordClaw Phase 1 skills available on request*
